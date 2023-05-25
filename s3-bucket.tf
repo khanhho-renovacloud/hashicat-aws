@@ -1,5 +1,6 @@
 module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+  source  = "app.terraform.io/renova-cloud/s3-bucket/aws"
+  version = "2.8.0"
 
   bucket = "${prefix}-lab-bucket"
   acl    = "private"
