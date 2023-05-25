@@ -2,7 +2,7 @@ module "s3_bucket" {
   source  = "app.terraform.io/renova-cloud/s3-bucket/aws"
   version = "2.8.0"
 
-  bucket = "${var.prefix}-lab-bucket"
+  bucket = "khanhho-lab-bucket"
   acl    = "private"
 
   control_object_ownership = true
